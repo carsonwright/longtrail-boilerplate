@@ -1,0 +1,19 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:nextinline/example.git",
+  "author": "Carson Wright <carsonnwright@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^5.1.0"
+  },
+  "scripts": {
+    "dev:api": "npx yarn --cwd ./api dev",
+    "dev:web": "npx yarn --cwd ./web dev",
+    "dev": "concurrently -k --restart-tries 5 \"npx yarn dev:api\" \"npx yarn dev:web\"",
+    "console": "npx yarn --cwd ./api console",
+    "c": "yarn console"
+  }
+
+}

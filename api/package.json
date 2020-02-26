@@ -1,0 +1,20 @@
+{
+  "name": "longtrail-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^3.0.8",
+    "longtrail": "^0.1.14",
+    "nodemon": "^2.0.2",
+    "repl.history": "^0.1.4"
+  },
+  "scripts": {
+    "dev": "nodemon index.js",
+    "db:migrate": "knex-migrate up",
+    "db:rollback": "knex-migrate down",
+    "generate:migration": "npx knex migrate:make",
+    "console": "node --experimental-repl-await  ./repl",
+    "c": "yarn console"
+  }
+}
