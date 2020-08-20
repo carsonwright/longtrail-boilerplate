@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "bcrypt": "^3.0.8",
+    "bcrypt": "^5.0.0",
     "longtrail": "^0.1.14",
     "nodemon": "^2.0.2",
     "repl.history": "^0.1.4"
